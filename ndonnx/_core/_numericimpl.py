@@ -363,7 +363,7 @@ class _NumericOperationsImpl(OperationsBlock):
             ),
             [ndx.reshape(x, [-1]) if axis is None else x],
             cast_return=False,
-            int_dtype=ndx.int32,
+            int_dtype=ndx.int64,
             float_dtype=ndx.float64,
         )
 
@@ -381,7 +381,7 @@ class _NumericOperationsImpl(OperationsBlock):
             ),
             [ndx.reshape(x, [-1]) if axis is None else x],
             cast_return=False,
-            int_dtype=ndx.int32,
+            int_dtype=ndx.int64,
             float_dtype=ndx.float64,
         )
 
